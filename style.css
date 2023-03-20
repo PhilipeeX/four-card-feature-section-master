@@ -23,8 +23,8 @@
     box-sizing: border-box;
     font-family: 'Poppins';
 }
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 680px) {
     body {
         background-color: var(--Very-Light-Gray);
         font-size: 15px;
@@ -33,15 +33,28 @@
         align-items: center;
     }
     header {
-        margin: 15% 5%;
+        margin: 15% 10%;
+    }
+    header h1 {
+        font-weight: 200;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    header em {
+        font-style: normal;
+        font-weight: 600;
+        color: var(--Very-Dark-Blue);
+    }
+    header p {
+        color: var(--Grayish-Blue);
     }
     main {
-        margin: 0 5% 15% 5%;
+        margin: 0 10% 15% 10%;
     }
     section {
         border-radius: .5rem;
         background-color: white;
-        padding: 1.5rem;
+        padding: 1.5rem 1rem;
         display: flex;
         flex-direction: column;
         margin-bottom: 2rem;
@@ -50,16 +63,19 @@
         box-shadow: 2px 13px 31px -11px rgba(0,0,0,0.36);
     }
     .supervisor {
-        border-top: 2px solid var(--Cyan);
+        border-top: 4px solid var(--Cyan);
     }
     .team-builder {
-        border-top: 2px solid var(--Red);
+        border-top: 4px solid var(--Red);
     }
     .karma {
-        border-top: 2px solid var(--Orange);
+        border-top: 4px solid var(--Orange);
     }
     .calculator {
-        border-top: 2px solid var(--Blue);
+        border-top: 4px solid var(--Blue);
+    }
+    section h2 {
+        color: var(--Very-Dark-Blue);
     }
     section p {
         color: var(--Grayish-Blue);
@@ -68,27 +84,149 @@
     figure {
         align-self: flex-end;
     }
-
 }
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
+@media only screen and (max-width: 1200px) and (min-width: 680px) {
+    body {
+        background-color: var(--Very-Light-Gray);
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header {
+        margin: 15% 10%;
+        text-align: center;
+    }
+    .texto-principal {
+        max-width: 700px;
+    }
+    header h1 {
+        font-weight: 200;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    header em {
+        font-style: normal;
+        font-weight: 600;
+        color: var(--Very-Dark-Blue);
+    }
+    header p {
+        font-size: 1rem;
+        color: var(--Grayish-Blue);
+    }
+    main {
+        margin: 0 10% 15% 10%;
+    }
+    section {
+        border-radius: .5rem;
+        background-color: white;
+        padding: 1.5rem 1rem;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        -webkit-box-shadow: 2px 13px 31px -11px rgba(0,0,0,0.36);
+        -moz-box-shadow: 2px 13px 31px -11px rgba(0,0,0,0.36);
+        box-shadow: 2px 13px 31px -11px rgba(0,0,0,0.36);
+    }
+    .supervisor {
+        border-top: 4px solid var(--Cyan);
+    }
+    .team-builder {
+        border-top: 4px solid var(--Red);
+    }
+    .karma {
+        border-top: 4px solid var(--Orange);
+    }
+    .calculator {
+        border-top: 4px solid var(--Blue);
+    }
+    section h2 {
+        color: var(--Very-Dark-Blue);
+    }
+    section p {
+        color: var(--Grayish-Blue);
+        margin-bottom: 1.5rem;
+    }
+    figure {
+        align-self: flex-end;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    
+    body {
+        background-color: var(--Very-Light-Gray);
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header {
+        margin: 10%;
+        text-align: center;
+    }
+    .texto-principal {
+        max-width: 700px;
+    }
+    header h1 {
+        font-weight: 200;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    header em {
+        font-style: normal;
+        font-weight: 600;
+        color: var(--Very-Dark-Blue);
+    }
+    header p {
+        font-size: 1.3rem;
+        color: var(--Grayish-Blue);
+    }
+    main {
+        display: flex;
+        gap: 2rem;
+        margin: 0 5% 15% 5%;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    section {
+        border-radius: .5rem;
+        background-color: white;
+        padding: 1.5rem 1rem;
+        display: flex;
+        flex-direction: column;
+        max-width: 360px;
+        -webkit-box-shadow: 2px 13px 31px -11px rgba(0,0,0,0.36);
+        -moz-box-shadow: 2px 13px 31px -11px rgba(0,0,0,0.36);
+        box-shadow: 2px 13px 31px -11px rgba(0,0,0,0.36);
+    }
+    .supervisor {
+        border-top: 4px solid var(--Cyan);
+    }
+    .team-builder {
+        border-top: 4px solid var(--Red);
+    }
+    .karma {
+        border-top: 4px solid var(--Orange);
+    }
+    .calculator {
+        border-top: 4px solid var(--Blue);
+    }
+    section h2 {
+        color: var(--Very-Dark-Blue);
+    }
+    section p {
+        color: var(--Grayish-Blue);
+        margin-bottom: 1.5rem;
+    }
+    figure {
+        align-self: flex-end;
+    }
 }
 
 /* .attribution { font-size: 11px; text-align: center; }
